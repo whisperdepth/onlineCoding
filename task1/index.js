@@ -1,6 +1,7 @@
-function markAdmins(user, ids) {
-  return user.map((user) => {
-    let isAdmin = ids.includes(user.id);
-    return { ...user, isAdmin };
-  });
+function makeCounter() {
+  let counter = 0;
+
+  return function count() {
+    return counter++;
+  };
 }
