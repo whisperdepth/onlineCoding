@@ -9,10 +9,11 @@ class Sportsman {
 
 class Swimmer extends Sportsman {
   constructor(name, style) {
-    super(name)
+    super(name);
     this.style = style;
   }
   swim() {
     console.log(`${this.name} is swimming ${this.style}`);
   }
+}
 }
