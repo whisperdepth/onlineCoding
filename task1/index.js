@@ -1,7 +1,18 @@
-export function makeCounter() {
-  let counter = 0;
+class Sportsman {
+  constructor(name) {
+    this.name = name;
+  }
+  run() {
+    console.log(`${this.name} is running`);
+  }
+}
 
-  return function count() {
-    return counter++;
-  };
+class Swimmer extends Sportsman {
+  constructor(name, style) {
+    super(name);
+    this.style = style;
+  }
+  swim() {
+    console.log(`${this.name} is swimming ${this.style}`);
+  }
 }
